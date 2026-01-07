@@ -1,0 +1,60 @@
+ h1 , h2{
+        color: red;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+p{
+    text-align: center;
+}
+
+body {
+    color: white;
+    background-color: rgb(88, 23, 23);
+}
+
+li{
+    list-style-type: none;
+    margin-bottom: 50px;
+    display: inline;
+}
+
+ul{
+    text-align: center;
+    padding: 0;
+}
+
+.destaque{
+    background-color: brown;
+    color: azure;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#img-logo{
+    width: 50px;
+    height: 50px;
+}
+nav li{
+    display: inline;
+    margin-left: 20px;
+    color: rgb(90, 2, 2);
+    font-weight: bolder;
+    border: 2px solid rgb(90, 2, 2);
+    padding: 5px;
+}
+nav{
+    float: right;
+}
+header{
+    align-items: center;
+    background-color: white;
+}
+main{
+    margin:auto 20%;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
