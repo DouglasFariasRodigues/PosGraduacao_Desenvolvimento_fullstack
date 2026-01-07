@@ -1,0 +1,44 @@
+ h2 , h2{
+        color: red;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    p{
+        text-align: justify;
+    }
+
+    .destaque{
+        background-color: brown;
+        color: azure;
+        padding: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    #img-logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    nav li{
+        display: inline;
+        margin-left: 20px;
+        color: rgb(90, 2, 2);
+        font-weight: bolder;
+        border: 2px solid rgb(90, 2, 2);
+        padding: 5px;
+    }
+
+    nav{
+        float: right;
+    }
+
+
+    header{
+        background-color: gray;
+    }
+
+    main{
+        margin:auto 20%;
+    }
