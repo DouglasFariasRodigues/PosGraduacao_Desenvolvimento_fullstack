@@ -1,0 +1,18 @@
+form {
+  display: inline;  
+
+}
+
+h1{
+    color: brown;
+    font-size: large;
+    
+}
+#resultados{
+    display: inline;
+}
+
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
