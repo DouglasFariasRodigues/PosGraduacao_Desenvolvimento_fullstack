@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="style.css">
+
+    <Script>
+        function med(){
+            const n1 = document.getElementById('nota1').value
+            const n2 = document.getElementById('nota2').value
+            const n3 = document.getElementById('nota3').value
+            const n4 = document.getElementById('nota4').value
+
+            const media = (Number(n1) + Number(n2) + Number(n3) + Number(n4))/4
+            const result = document.getElementById('Resultado')
+            result.innerHTML = "Média = " + media
+            const Aprov = document.getElementById('Aprovado')
+
+            let mensagem = media >= 7 ? 'Aprovado':'Reprovado'
+            Aprov.innerHTML = mensagem
+
+        }
+    </Script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Média</h1>
+    </header>
+
+    <form action="">
+        <input type="text" id="nota1">
+        <input type="text" id="nota2">
+        <input type="text" id="nota3">
+        <input type="text" id="nota4">
+
+        <input type="button"  id="media" value="Calcular Media" onclick="med()">
+
+        <div class="resultados">
+            <h2 id="Resultado">Resultado</h2>
+            <h2 id="Aprovado"> Você está</h2>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+
+    <Script>
+        let salario = 1000
+        const cargo = prompt()
+        let aumento = 0
+
+        switch (cargo){
+            case 'Estagiario' : aumento = 1;
+            salario = (salario * aumento) + salario
+            break
+            case 'Analista' : aumento = 0.5;
+            salario = (salario * aumento) + salario
+            break
+            case 'Gerente' : aumento = 0.30;
+            salario = (salario * aumento) + salario
+            break
+            case 'Presidente' : aumento = 0.10;
+            salario = (salario * aumento) + salario
+            break
+
+        }
+
+        console.log(salario)
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>
