@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For</title>
+    <Script>
+        const pessoa = {
+            nome : 'José',
+            idade : 23,
+            telefone : '87123456789'
+        }
+
+        const carros = ['Gol','Voyage','Fiat','Ford']
+
+        for(let i in pessoa){
+            console.log(`${i} >> ${pessoa[i]}`)
+        }
+
+        for(let j in carros){
+            console.log(carros[j])
+        }
+
+        for (let elementos of carros){
+            console.log(elementos)
+        }
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>

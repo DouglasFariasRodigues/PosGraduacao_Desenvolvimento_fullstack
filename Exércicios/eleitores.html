@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de eleitores</title>
+
+    <Script>
+        function Posso_votar(){
+            const ano_de_Votacao = document.getElementById('Ano_vota').value
+            const ano_Nascimento = document.getElementById('Ano_nasci').value
+            let resultado = document.getElementById('result')
+
+            let idade = Number(ano_de_Votacao) - Number(ano_Nascimento)
+
+            if (idade < 16){
+                resultado.innerHTML = "Não possui idade mínima"
+            }
+            else if(idade >= 16 && idade <18){
+                resultado.innerHTML = "Você possui a idade mínima"
+            }
+            else if(idade >= 18 && idade <=65){
+                resultado.innerHTML = "Você tem a obrigação de votar"
+            }
+            else{
+                resultado.innerHTML ="Você não é mais obrigado a votar é facultativo"
+            }
+        }
+
+
+
+    </Script>
+</head>
+<body>
+    <h1>
+        Votação
+    </h1>
+
+    <p>Ano de Votação</p>
+    <input type="text" id="Ano_vota">
+    <br>
+    <p>Ano de Nascimento</p>
+    <input type="text" id="Ano_nasci">
+    <br>
+    <input type="button" value="Descobrir" onclick="Posso_votar()" >
+    <br>
+
+    <p id="result">Eu posso votar?</p>
+</body>
+</html>

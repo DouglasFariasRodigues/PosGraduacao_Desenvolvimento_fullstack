@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="style.css">
+
+    <Script>
+        function med(){
+            let contador =1
+            let quantidade = prompt("Quantidade de notas:")
+            let soma = 0
+
+            while(contador <= quantidade){
+                let nota = prompt("Digite sua nota "+ contador +" :")
+                soma += nota
+                contador++
+            }
+            let media = soma / quantidade
+            const result = document.getElementById('Resultado')
+            result.innerHTML = "Média = " + media
+            const Aprov = document.getElementById('Aprovado')
+
+            let mensagem = media >= 7 ? 'Aprovado':'Reprovado'
+            Aprov.innerHTML = mensagem
+
+        }
+    </Script>
+</head>
+<body>
+
+</body>
+</html>
