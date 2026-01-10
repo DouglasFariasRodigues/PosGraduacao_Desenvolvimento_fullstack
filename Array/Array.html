@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+
+    <script>
+        const nome = "José Douglas"
+        const idade = 22
+
+        const carros = ['Gol','KA','Fiat','Fusca','Virtus']
+
+        carros.push('Fiesta') //coloca no inicio
+        carros.unshift('Palio') //coloca ao final 
+        carros.pop() //retira do fim
+        carros.shift() //Retira do início
+
+     
+
+        carros.splice(1,1) //Remove da posição 1
+        carros.splice(1,0,'Uno') //Adiciona na posição 1
+
+        carros.sort() //Ordena
+
+        console.table(carros)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
